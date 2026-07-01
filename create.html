@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Создать подарок — MusicBouquet</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+<div class="overlay"></div>
+
+<div class="form-wrapper fade">
+
+<div class="form-card">
+
+<h1 class="form-title">🎁 Создание музыкального подарка</h1>
+
+<form id="giftForm">
+
+<!-- ТЕКСТ -->
+
+<div class="form-group">
+
+<label>💌 Текст поздравления</label>
+
+<textarea id="message" placeholder="Напиши тёплые слова..."></textarea>
+
+</div>
+
+<!-- ИМЯ -->
+
+<div class="form-group">
+
+<label>👤 Имя получателя</label>
+
+<input type="text" id="name" placeholder="Например: Алина">
+
+</div>
+
+<!-- ФОТО -->
+
+<div class="form-group">
+
+<label>📷 Фото</label>
+
+<input type="file" id="photo" accept="image/*">
+
+</div>
+
+<!-- БУКЕТ -->
+
+<div class="form-group">
+
+<label>💐 Выбор букета</label>
+
+<select id="bouquet">
+
+<option value="flower1.png">Розовый</option>
+<option value="flower2.png">Белый</option>
+<option value="flower3.png">Красный</option>
+<option value="flower4.png">Синий</option>
+<option value="flower5.png">Премиум</option>
+
+</select>
+
+</div>
+
+<!-- МУЗЫКА -->
+
+<div class="form-group">
+
+<label>🎵 YouTube ссылка</label>
+
+<input type="text" id="youtube" placeholder="https://youtube.com/...">
+
+</div>
+
+<div class="form-group">
+
+<label>📺 Яндекс Видео</label>
+
+<input type="text" id="yandex" placeholder="https://...">
+
+</div>
+
+<div class="form-group">
+
+<label>🎧 MP3 ссылка</label>
+
+<input type="text" id="mp3" placeholder="https://...">
+
+</div>
+
+<!-- КНОПКА -->
+
+<button type="submit" class="btn btn-primary">
+
+✨ Создать подарок
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="js/create.js"></script>
+
+</body>
+</html>

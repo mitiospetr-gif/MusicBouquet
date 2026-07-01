@@ -1,0 +1,693 @@
+/* =====================================
+   MusicBouquet v5 Photo PRO
+   style.css
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Montserrat',sans-serif;
+
+    color:#ffffff;
+
+    overflow-x:hidden;
+
+    background:#111;
+
+    min-height:100vh;
+
+}
+
+/* ---------- ‘ŒÕ ---------- */
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:url("../assets/default-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    z-index:-3;
+
+    transform:scale(1.05);
+
+}
+
+.overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.55)
+    );
+
+    z-index:-2;
+
+}
+
+/* ---------- HEADER ---------- */
+
+header{
+
+    width:min(1100px,92%);
+
+    margin:auto;
+
+    padding:80px 0;
+
+    text-align:center;
+
+}
+
+.logo{
+
+    font-family:'Marck Script',cursive;
+
+    font-size:68px;
+
+    margin-bottom:20px;
+
+    color:#fff;
+
+    text-shadow:
+
+    0 0 15px rgba(255,255,255,.4),
+
+    0 0 30px rgba(255,150,200,.25);
+
+}
+
+.subtitle{
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    font-size:20px;
+
+    color:#f4f4f4;
+
+}
+
+.startButton{
+
+    display:inline-block;
+
+    margin-top:45px;
+
+    padding:18px 42px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #ff4f9c,
+        #ff8d5d
+    );
+
+    font-weight:700;
+
+    font-size:18px;
+
+    transition:.35s;
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.startButton:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+    0 25px 45px rgba(0,0,0,.45);
+
+}
+
+/* ---------- PREVIEW ---------- */
+
+.preview{
+
+    width:min(1200px,92%);
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(240px,1fr));
+
+    gap:28px;
+
+}
+
+.card{
+
+    backdrop-filter:blur(12px);
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    background:rgba(255,255,255,.18);
+
+}
+
+.card h2{
+
+    margin:18px 0;
+
+    font-size:25px;
+
+}
+
+.card p{
+
+    line-height:1.8;
+
+    color:#ededed;
+
+}
+
+.flower{
+
+    font-size:58px;
+
+}
+
+/* ---------- œ–≈»Ã”Ÿ≈—“¬¿ ---------- */
+
+.advantages{
+
+    width:min(1200px,92%);
+
+    margin:90px auto;
+
+    text-align:center;
+
+}
+
+.advantages h2{
+
+    margin-bottom:40px;
+
+    font-size:40px;
+
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:22px;
+
+}
+
+.grid div{
+
+    padding:28px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(10px);
+
+    transition:.3s;
+
+    font-size:42px;
+
+}
+
+.grid div:hover{
+
+    transform:scale(1.05);
+
+}
+
+.grid p{
+
+    margin-top:15px;
+
+    font-size:16px;
+
+    color:#f2f2f2;
+
+}
+/* =====================================
+   ‘Œ–Ã€ (create.html)
+===================================== */
+
+.form-wrapper{
+    width:min(900px,92%);
+    margin:60px auto;
+}
+
+.form-card{
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(12px);
+    border-radius:28px;
+    padding:40px;
+    border:1px solid rgba(255,255,255,.15);
+}
+
+.form-title{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:35px;
+}
+
+.form-group{
+    margin-bottom:25px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:10px;
+    font-weight:600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    outline:none;
+
+    font-size:16px;
+
+    font-family:inherit;
+
+    background:rgba(255,255,255,.92);
+
+    color:#222;
+
+}
+
+textarea{
+
+    resize:vertical;
+
+    min-height:180px;
+
+}
+
+input[type=file]{
+
+    background:none;
+    color:white;
+    padding:0;
+
+}
+
+/* =====================================
+    ÕŒœ »
+===================================== */
+
+.btn{
+
+    display:inline-block;
+
+    padding:16px 34px;
+
+    border:none;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+    margin-top:15px;
+
+}
+
+.btn-primary{
+
+    background:#ff5a9c;
+
+    color:white;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.btn-secondary{
+
+    background:white;
+
+    color:#222;
+
+}
+
+.btn-secondary:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* =====================================
+   VIEW PAGE
+===================================== */
+
+.gift{
+
+    width:min(900px,92%);
+
+    margin:60px auto;
+
+    text-align:center;
+
+}
+
+.gift-photo{
+
+    width:240px;
+
+    height:240px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:8px solid white;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+    margin-bottom:30px;
+
+}
+
+.gift-title{
+
+    font-family:'Marck Script',cursive;
+
+    font-size:56px;
+
+    margin-bottom:20px;
+
+}
+
+.gift-text{
+
+    line-height:2;
+
+    font-size:20px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    margin:30px 0;
+
+}
+
+/* =====================================
+   ¡” ≈“
+===================================== */
+
+.bouquet{
+
+    width:100%;
+
+    max-width:420px;
+
+    margin:35px auto;
+
+    display:block;
+
+}
+
+/* =====================================
+   Ã”«€ ¿À‹Õ€≈  ÕŒœ »
+===================================== */
+
+.music-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.music-buttons a{
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:15px 28px;
+
+    border-radius:40px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.youtube{
+
+    background:#ff0000;
+
+}
+
+.yandex{
+
+    background:#ffcc00;
+
+    color:#222 !important;
+
+}
+
+.mp3{
+
+    background:#00b36b;
+
+}
+
+.music-buttons a:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer{
+
+    text-align:center;
+
+    padding:45px 0;
+
+    color:#ddd;
+
+}
+
+/* =====================================
+   ¿Õ»Ã¿÷»»
+===================================== */
+
+.fade{
+
+    animation:fade .8s ease;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =====================================
+   ¿ƒ¿œ“»¬ÕŒ—“‹
+===================================== */
+
+@media(max-width:900px){
+
+.logo{
+
+    font-size:52px;
+
+}
+
+.subtitle{
+
+    font-size:18px;
+
+}
+
+.advantages h2{
+
+    font-size:32px;
+
+}
+
+.gift-title{
+
+    font-size:44px;
+
+}
+
+.gift-photo{
+
+    width:190px;
+
+    height:190px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+header{
+
+    padding:50px 0;
+
+}
+
+.logo{
+
+    font-size:42px;
+
+}
+
+.subtitle{
+
+    font-size:16px;
+
+}
+
+.startButton{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.card{
+
+    padding:25px;
+
+}
+
+.form-card{
+
+    padding:25px;
+
+}
+
+.gift-text{
+
+    padding:25px;
+
+    font-size:18px;
+
+}
+
+.music-buttons{
+
+    flex-direction:column;
+
+}
+
+.music-buttons a{
+
+    width:100%;
+
+}
+
+}
